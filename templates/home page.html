@@ -1,33 +1,41 @@
 ﻿<!DOCTYPE html>
-
-
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <link rel="stylesheet" href="home page design.css">
+    <link rel="stylesheet" href="../static/mystyle.css">
+    
 </head>
 <body>
+    <header class="page-header">
+        <h1 id="pHeader">Web Course Exercise!</h1>
+    </header>
     <nav class="innerHeader">
         <ul class="navigation">
-            <a href="file:///C:/Users/stavd/Documents/GitHub/stav-dorani/templates/home page.html" target="_blank"><li>My Home page</li></a>
-            <a href="file:///C:/Users/stavd/Documents/GitHub/stav-dorani/templates/contac us.html" target="_blank"><li>Contact us</li></a>
+            <a id="hom" href="file:///C:/Users/stavd/Documents/GitHub/stav-dorani/templates/home page.html" target="_self"><li>My Home page</li></a>
+            <a id="con" href="file:///C:/Users/stavd/Documents/GitHub/stav-dorani/templates/contac us.html" target="_self"><li>Contact us</li></a>
         </ul>
     </nav>
-    <div style="border: 18px solid; padding: 2vh; margin: 24px;">
-        <h1>Welcome To My Home Page</h1>
+    <div id="container">
+        <div id="contant_header" style="border: 20px solid; padding: 2vh; margin: 22px;">
+            <h1>Welcome To My Homepage</h1>
+        </div>
+        <div id="content">
+            <p>
+                <b>this is my homepage, feels like home :)</b>
+            </p>
+        </div>
+        <img id="pic" src="file:///C:/Users/stavd/Documents/GitHub/stav-dorani/static/download.jpg" alt="myPic" />
+        <br />
     </div>
-    <img src="file:///C:/Users/stavd/Documents/GitHub/stav-dorani/static/download.jpg" alt="myPic" />
-    <br />
-    <p>
-        <b>this is my home page fill like home :)</b>
-    </p>
-    <ul>
-        <li><a href="contac us.html">contact us</a></li>
-    </ul>
-    <mark> It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better… </mark>
+    <div class="footer">
+        <ul>
+            <li><a href="contac us.html">contact us</a></li>
+            <li><mark> It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better… </mark></li>
+        </ul>
+    </div>
+    <script src="../static/myScript.js"></script>
 </body>
 </html>
