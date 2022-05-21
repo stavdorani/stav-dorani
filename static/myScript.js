@@ -38,11 +38,13 @@ function changeBorderStyle(){
 const navHom = document.getElementById("hom");
 const navCon = document.getElementById("con");
 
-if ( document.URL.includes("home%20page.html") ) {
-    navHom.style.color = "green";
-    navHom.style.fontSize = "25px";
+function markThis(eleme){
+    eleme.style.color = "green";
+    eleme.style.fontSize = "25px";
+}
 
+if ( document.URL.includes("home%20page.html") ) {
+    markThis(navHom);
 } else {
-    navCon.style.color = "green";
-    navCon.style.fontSize = "25px";
+    markThis(navCon);
 }
